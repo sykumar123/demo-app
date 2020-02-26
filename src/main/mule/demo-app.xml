@@ -9,6 +9,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:listener-config>
 	<flow name="demo-appFlow" doc:id="2cfeda4a-7531-4d42-8649-e464c84cb08b" >
 		<http:listener doc:name="Listener" doc:id="cddeaeff-a4a3-40bc-90a8-3b137a6dc6da" config-ref="HTTP_Listener_config" path="/demo" allowedMethods="GET"/>
-		<set-payload value='#["Hello " ++ (attributes.queryParams.Name default "") ++ "!"]' doc:name="Set Payload" doc:id="660106a5-bf23-41b3-a037-5affce7953a2" />
+		<set-payload value='#["Hello " ++ (attributes.queryParams.Name default "") ++ "!!"]' doc:name="Set Payload" doc:id="660106a5-bf23-41b3-a037-5affce7953a2" />
 	</flow>
 </mule>
